@@ -5,39 +5,13 @@ def get_number(message):
         except ValueError:
             print("Invalid input. Please enter a number.")
 
+
 def calculator():
     print("\n--- Basic Calculator ---")
 
     num1 = get_number("Enter first number: ")
     operator = input("Enter operator (+, -, *, /): ").strip()
     num2 = get_number("Enter second number: ")
-
-    if operator == "+":
-        result = num1 + num2
-
-    elif operator == "-":
-        result = num1 - num2
-
-    elif operator == "*":
-        result = num1 * num2
-
-    elif operator == "/":
-        if num2 == 0:
-            print("Error: Cannot divide by zero.")
-            return
-
-        result = num1 / num2
-
-    else:
-        print("Invalid operator.")
-        return
-
-    print("Result:", result)
-    print("\n--- Basic Calculator ---")
-
-    num1 = float(input("Enter first number: "))
-    operator = input("Enter operator (+, -, *, /): ").strip()
-    num2 = float(input("Enter second number: "))
 
     if operator == "+":
         result = num1 + num2
@@ -70,6 +44,7 @@ def kilometers_to_miles():
     miles = kilometers * 0.621371
 
     print("Distance in miles:", miles)
+
 
 def celsius_to_fahrenheit():
     print("\n--- Celsius to Fahrenheit ---")
